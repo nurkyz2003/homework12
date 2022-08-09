@@ -1,46 +1,49 @@
 public class Dog {
-    private  String name1;
-    private  int age1;
-    private String color1;
-    private String eyecolor1;
-    private double weight1;
 
-    void setName1(String word){
-        name1 = word;
+    private  int age2;
+    private String color2;
+    private  boolean pets2;
+    private double weight2;
+
+    public Dog(){
+
     }
-
-    void setAge1(int number){
-        age1 = number;
-    }
-
-    void setColor1(String word1){
-        color1 = word1;
+    public Dog(int age2, String color2,boolean pets2, double weight2){
+        this.age2 = age2;
+        this.color2 = color2;
+        this.pets2 = pets2;
+        this.weight2 = weight2;
     }
 
-    void setEyecolor1(String word2){
-        eyecolor1 = word2;
+
+    public void setAge2(int age2){
+        this.age2 = age2;
     }
 
-    void setWeight1(double number1){
-        weight1 = number1;
+    public void setColor2(String color2){
+        this.color2 = color2;
     }
 
-    String getName1(){
-        return name1;
+    public void setPets(boolean pets2){
+        this.pets2 = pets2;
+    }
+    public void setWeight2(double weight2){
+        this.weight2 = weight2;
     }
 
-    int getAge1(){
-        return age1;
+
+    public int getAge2(){
+        return age2;
     }
-    String getColor1(){
-        return color1;
+    public String getColor2(){
+        return color2;
+    }
+    public boolean getPets2(){
+        return true;
+    }
+    public double getWeight2(){
+        return weight2;
     }
 
-    String getEyecolor1(){
-        return eyecolor1;
-    }
-
-    double getWeight1(){
-        return weight1;
-    }
 }
+

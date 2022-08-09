@@ -1,82 +1,47 @@
 public class Main {
     public static void main(String[] args) {
-        Cat cat = new Cat();
-        cat.setName("Margo");
-        String name = cat.getName();
-        cat.setAge(7);
-        int age = cat.getAge();
-        cat.setColor("White");
-        String color = cat.getColor();
-        cat.setEyecolor("Blue");
-        String eyecolor = cat.getEyecolor();
-        cat.setWeight(4.50);
-        double weight = cat.getWeight();
+        new Parrot();
+        Parrot parrot = new Parrot(4,"Blue",true,5.80);
+        System.out.println("This is the Class - PARROT:");
+        System.out.println("Age: " + parrot.getAge2());
+        System.out.println("Color: " +  parrot.getColor2());
+        System.out.println("Pets: " + parrot.getPets2());
+        System.out.println("Weight: " + parrot.getWeight2());
+        System.out.println("------------------------------------");
 
-        System.out.println("This is a Class - CAT:");
-        System.out.println(name);
-        System.out.println(age);
-        System.out.println(color);
-        System.out.println(eyecolor);
-        System.out.println(weight);
-        System.out.println("-----------------------------------------------------------------------------------");
 
-        Dog dog = new Dog();
-        dog.setName1("Doberman");
-        String name1 = dog.getName1();
-        dog.setAge1(10);
-        int age1 = dog.getAge1();
-        dog.setColor1("White");
-        String color1 = dog.getColor1();
-        dog.setEyecolor1("Black");
-        String eyecolor1 = dog.getEyecolor1();
-        dog.setWeight1(10.80);
-        double weight1 = dog.getWeight1();
+        Parrot parrot2 = new Parrot(2,"Green",true,5.20);
+        System.out.println("This is the Class - PARROT2:");
+        System.out.println("Age: " + parrot2.getAge2());
+        System.out.println("Color: " +  parrot2.getColor2());
+        System.out.println("Pets: " + parrot2.getPets2());
+        System.out.println("Weight: " + parrot2.getWeight2());
+        System.out.println("------------------------------------");
 
-        System.out.println("This is a Class - DOG:");
-        System.out.println(name1);
-        System.out.println(age1);
-        System.out.println(color1);
-        System.out.println(eyecolor1);
-        System.out.println(weight1);
-        System.out.println("-----------------------------------------------------------------------------------");
+        new Cat();
+        Cat cat = new Cat(6,"White",true,4.30);
+        System.out.println("This is the Class - CAT:");
+        System.out.println("Age: " + cat.getAge2());
+        System.out.println("Color: " + cat.getColor2());
+        System.out.println("Pets: " + cat.getPets2());
+        System.out.println("Weight: " + cat.getWeight2());
+        System.out.println("------------------------------------");
 
-        Parrot parrot = new Parrot();
-        parrot.setName2("Djo");
-        String name2 = parrot.getName2();
-        parrot.setAge2(3);
-        int age2 = parrot.getAge2();
-        parrot.setColor2("Yellow");
-        String color2 = parrot.getColor2();
-        parrot.setEyecolor2("Black");
-        String eyecolor2 = parrot.getEyecolor2();
-        parrot.setWeight2(7);
-        double weight2 = parrot.getWeight2();
+        new Fish();
+        Fish fish = new Fish(3,"Pink",false,3.70);
+        System.out.println("This is the Class - FISH:");
+        System.out.println("Age: " + fish.getAge2());
+        System.out.println("Color: " + fish.getColor2());
+        System.out.println("Pets: " + fish.getPets2());
+        System.out.println("Weight: " + fish.getWeight2());
+        System.out.println("------------------------------------");
 
-        System.out.println("This is a Class - PARROT:");
-        System.out.println(name2);
-        System.out.println(age2);
-        System.out.println(color2);
-        System.out.println(eyecolor2);
-        System.out.println(weight2);
-        System.out.println("-----------------------------------------------------------------------------------");
-
-        Fish fish = new Fish();
-        fish.setName3("Claus");
-        String name3 = fish.getName3();
-        fish.setAge3(4);
-        int age3 = fish.getAge3();
-        fish.setColor3("Pink");
-        String color3 = fish.getColor3();
-        fish.setEyecolor3("Black");
-        String eyecolor3 = fish.getEyecolor3();
-        fish.setWeight3(5.50);
-        double weight3 = fish.getWeight3();
-
-        System.out.println("This is a Class - FISH:");
-        System.out.println(name3);
-        System.out.println(age3);
-        System.out.println(color3);
-        System.out.println(eyecolor3);
-        System.out.println(weight3);
+        new Dog();
+        Dog dog = new Dog(10,"Grey",true,11.90);
+        System.out.println("This is the Class - DOG:");
+        System.out.println("Age: " + dog.getAge2());
+        System.out.println("Color: " + dog.getColor2());
+        System.out.println("Pets: " + dog.getPets2());
+        System.out.println("Weight: " + dog.getWeight2());
     }
 }

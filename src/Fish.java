@@ -1,47 +1,49 @@
 public class Fish {
-    private  String name3;
-    private  int age3;
-    private String color3;
-    private String eyecolor3;
-    private double weight3;
 
-    void setName3(String word){
-        name3 = word;
+    private  int age2;
+    private String color2;
+    private  boolean pets2;
+    private double weight2;
+
+    public Fish(){
+
+    }
+    public Fish(int age2, String color2,boolean pets2, double weight2){
+        this.age2 = age2;
+        this.color2 = color2;
+        this.pets2 = pets2;
+        this.weight2 = weight2;
     }
 
-    void setAge3(int number){
-        age3 = number;
+
+    public void setAge2(int age2){
+        this.age2 = age2;
     }
 
-    void setColor3(String word1){
-        color3 = word1;
+    public void setColor2(String color2){
+        this.color2 = color2;
     }
 
-    void setEyecolor3(String word2){
-        eyecolor3 = word2;
+    public void setPets(boolean pets2){
+        this.pets2 = pets2;
+    }
+    public void setWeight2(double weight2){
+        this.weight2 = weight2;
     }
 
-    void setWeight3(double number1){
-        weight3 = number1;
-    }
 
-    String getName3(){
-        return name3;
+    public int getAge2(){
+        return age2;
     }
-
-    int getAge3(){
-        return age3;
+    public String getColor2(){
+        return color2;
     }
-    String getColor3(){
-        return color3;
+    public boolean getPets2(){
+        return false;
     }
-
-    String getEyecolor3(){
-        return eyecolor3;
-    }
-
-    double getWeight3(){
-        return weight3;
+    public double getWeight2(){
+        return weight2;
     }
 
 }
+
